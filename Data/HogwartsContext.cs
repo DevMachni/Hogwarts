@@ -16,7 +16,7 @@ namespace Hogwarts.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             #region
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=Hogwarts;User=sa;Password=Doglover420;");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=Hogwarts;Trusted_Connection=True");
             #endregion
         }
 
