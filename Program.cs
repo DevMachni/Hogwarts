@@ -71,17 +71,7 @@ namespace Hogwarts
                 }
                 WriteLine("---------------------------------");
             }
-
-            ConsoleKeyInfo keyPressed;
-            bool escapePressed = false;
-
-            do
-            {
-                keyPressed = ReadKey(true);
-
-                escapePressed |= keyPressed.Key == ConsoleKey.Escape;
-
-            } while (!escapePressed);
+            EscToExit();
         }
 
         private static void RegisterStudentToCourse()
@@ -230,17 +220,7 @@ namespace Hogwarts
                 WriteLine($"{student.FirstName} {student.LastName}, {student.SocialSecurityNumber}              {student.Address.Street}, {student.Address.Postcode} {student.Address.City}");
             }
 
-            ConsoleKeyInfo keyPressed;
-
-            bool escapePressed = false;
-
-            do
-            {
-                keyPressed = ReadKey(true);
-
-                escapePressed |= keyPressed.Key == ConsoleKey.Escape;
-
-            } while (!escapePressed);
+            EscToExit();
         }
 
         private static void RegisterTeacher()
@@ -298,6 +278,20 @@ namespace Hogwarts
                     } while (hasInvalidInput);
                 } while (shouldAbort == false);
             }
+        }
+        
+        private static void EscToExit()
+        {
+            ConsoleKeyInfo keyPressed;
+            bool escapePressed = false;
+
+            do
+            {
+                keyPressed = ReadKey(true);
+
+                escapePressed |= keyPressed.Key == ConsoleKey.Escape;
+
+            } while (!escapePressed);
         }
 
         private static void RegisterStudent()
