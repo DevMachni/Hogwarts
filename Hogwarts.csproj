@@ -22,22 +22,5 @@
       <Folder Include="Domain\Models\" />
     </ItemGroup>
     <ItemGroup>
-      <Compile Remove="Migrations\20191108084833_initial.cs" />
-      <Compile Remove="Migrations\20191108084833_initial.Designer.cs" />
-      <Compile Remove="Migrations\HogwartsContextModelSnapshot.cs" />
-      <Compile Remove="Migrations\20191108085002_initial2.cs" />
-      <Compile Remove="Migrations\20191108085002_initial2.Designer.cs" />
-      <Compile Remove="Migrations\20191108085057_initial3.Designer.cs" />
-      <Compile Remove="Migrations\20191108085057_initial3.cs" />
-      <Compile Remove="Migrations\20191108085702_initial4.cs" />
-      <Compile Remove="Migrations\20191108085702_initial4.Designer.cs" />
-      <Compile Remove="Migrations\20191108085916_initial5.cs" />
-      <Compile Remove="Migrations\20191108085916_initial5.Designer.cs" />
-      <Compile Remove="Migrations\20191108090142_initial6.cs" />
-      <Compile Remove="Migrations\20191108090142_initial6.Designer.cs" />
-      <Compile Remove="Migrations\20191108090305_initial7.cs" />
-      <Compile Remove="Migrations\20191108090305_initial7.Designer.cs" />
-      <Compile Remove="Migrations\20191108090802_initial8.cs" />
-      <Compile Remove="Migrations\20191108090802_initial8.Designer.cs" />
     </ItemGroup>
 </Project>
